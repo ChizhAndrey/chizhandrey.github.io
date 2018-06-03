@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1370px;
+  padding: 0 100px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  margin: 0 -15px;
+}
+
+.item {
+  margin: 0 15px;
+}
+
+#header-wrapper {
+  height: 670px;
+  background-image: url("../images/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #efefef;
+}
