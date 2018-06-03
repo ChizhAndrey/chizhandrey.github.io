@@ -30,7 +30,7 @@
 /* TEST */
 
 
-@media only all and (max-width: 700px) {
+@media only all and (max-width: 1200px) {
    .container {
      width: 100%;
      padding: 0;
