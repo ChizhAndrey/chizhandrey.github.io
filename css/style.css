@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700');
 
 
 
@@ -101,6 +101,7 @@ nav ul li {
   letter-spacing: 1.2px;
   display: inline-block;
   margin: 0 15px;
+  transition: 0.28s;
 }
 
 nav ul li:last-child {
@@ -112,7 +113,7 @@ nav ul li:first-child {
 }
 
 nav ul li:hover {
-  transform: translateY(2px);
+  transform: translateY(2.2px);
   color: #10c9c3;
 }
 
@@ -264,6 +265,161 @@ nav ul li:hover {
   width: 65%;
 }
 
+
+
+#numbers-wrapper {
+  height: 240px;
+  background-color: #10c9c3;
+}
+
+#numbers {
+  flex-direction: row;
+  padding-top: 95px;
+}
+
+#numbers .item {
+  width: calc(1200px / 12 * 3 - 30px);
+}
+
+#portfolio, #clock, #star, #like {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  line-height: 30px;
+  padding-left: 4px;
+}
+
+#portfolio span, #clock span, #star span, #like span {
+  font-size: 50px;
+  line-height: 60px;
+  padding-right: 20px;
+}
+
+#portfolio p, #clock p, #star p, #like p {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+#portfolio p:last-child, #clock p:last-child, #star p:last-child, #like p:last-child {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+
+
+
+#works {
+  height: 700px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #f5f5f5;
+}
+
+#works-item-wrapper {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#load-more  {
+  text-align: center;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#load-more button {
+  border: none;
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  color: #8e8e8e;
+  background-color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+#load-more button:hover {
+  color: #10c9c3;
+}
+
+#load-more button:active {
+  transition: 0.3s;
+  transform: scale(0.95);
+}
+
+
+.works-item {
+  height: 300px;
+  width: 342.5px;
+}
+
+.works-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+#work-process-wrapper {
+  height: 930px;
+}
+
+#work-process {
+  flex-direction: column;
+  align-items: center;
+}
+
+#work-process-title {
+  width: calc(1200px / 12 * 6 - 30px);
+  text-align: center;
+
+}
+
+#work-process-title h2 {
+  font-size: 30px;
+  line-height: 60px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding-top: 85px;
+  padding-bottom: 20px;
+}
+
+#work-process-title p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+  font-weight: 600;
+  color: #787878;
+  padding-bottom: 50px;
+}
+
+#work-process-video {
+  width: calc(1200px - 30px);
+  max-height: 570px;
+  height: 48vw;
+}
+
+#work-process-video video{
+   object-fit: inherit;
+}
+
+
+
+#services-wrapper {
+  height: 535px;
+}
 
 @media  all and (max-width: 1370px) {
   #main-wrapper {
