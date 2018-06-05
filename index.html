@@ -3,7 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <title>Project</title>
+  <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/video.css" />
+  <link rel="stylesheet" href="icons/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="http://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
 </head>
 <body>
   <div id="main-wrapper">
@@ -35,7 +41,7 @@
            <nav>
              <ul>
                <li>
-                 <a href="">Home</a>
+                 <a href="index.html">Home</a>
                </li>
                <li>
                  <a href="">About</a>
@@ -108,6 +114,89 @@
         </div>
       </div>
     </div>
+    <div class="container" id="numbers-wrapper">
+     <div class="row" id="numbers">
+       <div class="item" id="portfolio">
+         <span class="pe-7s-portfolio"></span>
+         <div id="portfolio-content">
+           <p>548</p>
+           <p>projects completed</p>
+         </div>
+       </div>
+       <div class="item" id="clock">
+         <span class="pe-7s-clock pe-va"></span>
+         <div id="clock-content">
+           <p>1465</p>
+           <p>working hours</p>
+         </div>
+       </div>
+       <div class="item" id="star">
+         <span class="pe-7s-star"></span>
+         <div id="star-content">
+           <p>612</p>
+           <p>positive feedbacks</p>
+         </div>
+       </div>
+       <div class="item" id="like">
+         <span class="pe-7s-like"></span>
+         <div id="like-content">
+           <p>735</p>
+           <p>happy clients</p>
+         </div>
+       </div>
+     </div>
+    </div>
+    <div class="container" id="works">
+     <div id="works-item-wrapper">
+       <div class="works-item">
+         <img src="images/work1.png" alt="">
+       </div>
+       <div class="works-item">
+         <img src="images/work2.png" alt="">
+       </div>
+       <div class="works-item">
+         <img src="images/work3.png" alt="">
+       </div>
+       <div class="works-item">
+         <img src="images/work5.png" alt="">
+       </div>
+       <div class="works-item">
+         <img src="images/work4.png" alt="">
+       </div>
+       <div class="works-item">
+         <img src="images/work6.png" alt="">
+       </div>
+       <div class="works-item">
+         <img src="images/work7.png" alt="">
+       </div>
+       <div class="works-item">
+         <img src="images/work8.png" alt="">
+       </div>
+     </div>
+     <div id="load-more">
+       <button type="button">load more work</button>
+     </div>
+    </div>
+    <div class="container" id="work-process-wrapper">
+      <div class="row" id="work-process">
+        <div class="item" id="work-process-title">
+          <h2>Our Work Process</h2>
+          <p>Was years it seasons was there form he in in them together over that,
+             third sixth gathered female creeping bearing behold years.
+          </p>
+        </div>
+        <video id="work-process-video" class="video-js vjs-default-skin" width="1170px" height="570px"
+            controls preload="none" poster="images/workprocess.png"
+            data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+          <source src="video/workprocess.mp4" type='video/mp4' />
+        </video>
+      </div>
+    </div>
+    <div class="container" id="services-wrapper">
+      <div class="row" id="services">
+      </div>
+    </div>
   </div>
+  <script src="https://vjs.zencdn.net/7.0.3/video.js"></script>
 </body>
 </html>
